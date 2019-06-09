@@ -31,17 +31,13 @@ class PID {
    */
   double TotalError();
 
- private:
-  /**
-   * PID Errors
-   */
+ public:
+  // Errors
   double p_error;
   double i_error;
   double d_error;
 
-  /**
-   * PID Coefficients
-   */ 
+  // Coefficients
   double Kp;
   double Ki;
   double Kd;

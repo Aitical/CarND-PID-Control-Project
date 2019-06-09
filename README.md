@@ -3,6 +3,30 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+### Brief Description
+
+$$
+U(k) = K_{p}e(k)+K_{i}\sum_{n=0}^{k}e(n)+K_{d}(e(k)-e(k-1))
+$$
+
+
+
+$P$ works to decrease CTE and VE values but steady state error and vibration can't avoid. 
+
+$I$  PI works to decrease steady state errors.  
+
+$D$ works to decrease CTE and VE proporting those change. And PD control overcomes overshoot and vibration. 
+
+ I try different coefficients to get a ideal result.
+
+### Result
+
+![](<https://raw.githubusercontent.com/Aitical/CarND-PID-Control-Project/master/pic/1.png>)
+
+![](<https://raw.githubusercontent.com/Aitical/CarND-PID-Control-Project/master/pic/3.png>)
+
+![](<https://raw.githubusercontent.com/Aitical/CarND-PID-Control-Project/master/pic/2.png>)
+
 ## Dependencies
 
 * cmake >= 3.5
